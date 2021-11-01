@@ -33,10 +33,23 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 // Keycode for thumb keys.
-#define THUMB_0 LSFT_T(KC_ENT)
-#define THUMB_1 LT(_F1, KC_SPC)
-#define THUMB_2 LT(_F2, KC_SPC)
-#define THUMB_3 RSFT_T(KC_ENT)
+#define THUMB_0 LSFT_T(LCTL(KC_LBRC))  // Shift when held. Ctrl-[ when tapped for vim. Requires following workaround.
+#define THUMB_1 LT(_F1, KC_SPC)  // Layer-1 when held. Space when tapped.
+#define THUMB_2 LT(_F2, KC_SPC)  // Layer-2 when held. Space when tapped.
+#define THUMB_3 RSFT_T(KC_ENT)   // Shift when held. Enter when tapped.
+
+// Workaround to send non-basic eycode LCTL(KC_LBRC).
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case THUMB_0:
+            if (record->tap.count && record->event.pressed) {
+                tap_code16(LCTL(KC_LBRC));  // Send Ctrl-[ on tap
+		return false;  // Return false to ignore further processing of key
+            }
+            break;
+    }
+    return true;
+}
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
@@ -117,32 +130,4 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_effect_range( 1, 4);
 #endif
 return state;
-}
-
-int RGB_current_mode;
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  bool result = false;
-  switch (keycode) {
-    #ifdef RGBLIGHT_ENABLE
-      case RGB_MOD:
-          if (record->event.pressed) {
-            rgblight_mode(RGB_current_mode);
-            rgblight_step();
-            RGB_current_mode = rgblight_config.mode;
-          }
-        break;
-      case RGB_RST:
-          if (record->event.pressed) {
-            eeconfig_update_rgblight_default();
-            rgblight_enable();
-            RGB_current_mode = rgblight_config.mode;
-          }
-        break;
-    #endif
-    default:
-      result = true;
-      break;
-  }
-
-  return result;
 }
