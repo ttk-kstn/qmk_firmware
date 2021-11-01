@@ -32,6 +32,11 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_GRV_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_GRV, KC_ESC),
 };
 
+// Keycode for thumb keys.
+#define THUMB_0 LSFT_T(KC_ENT)
+#define THUMB_1 LT(_F1, KC_SPC)
+#define THUMB_2 LT(_F2, KC_SPC)
+#define THUMB_3 RSFT_T(KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
@@ -44,7 +49,7 @@ TD(TD_GRV_ESC),   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,        KC_6,    KC_7
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT, KC_PSCR,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
-               KC_LGUI, KC_LALT,LSFT_T(KC_ENT),LT(_F1,KC_SPC), LT(_F2,KC_SPC),RSFT_T(KC_ENT),MO(_F0),KC_RCTL
+               KC_LGUI, KC_LALT, THUMB_0, THUMB_1,              THUMB_2, THUMB_3,          MO(_F0), KC_RCTL
           //`---------------------------------------------|   |--------------------------------------------'
   ),
 
