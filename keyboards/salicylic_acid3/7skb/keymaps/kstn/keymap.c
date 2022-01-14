@@ -33,20 +33,13 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 // Keycode for thumb keys.
-#define THUMB_0 LT(_F1, KC_LBRC)  // Layer-1 when held. Ctrl-[ when tapped for vim. Requires workaround in process_record_user().
+#define THUMB_0 LT(_F1, KC_ESC)   // Layer-1 when held. Esc when tapped.
 #define THUMB_1 LSFT_T(KC_SPC)    // Shift when held. Space when tapped.
 #define THUMB_2 RSFT_T(KC_SPC)    // Shift when held. Space when tapped.
 #define THUMB_3 LT(_F2, KC_ENT)   // Layer-2 when held. Enter when tapped.
 
-// Workaround to send non-basic keycode LCTL(KC_LBRC).
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case THUMB_0:
-            if (record->tap.count && record->event.pressed) {
-                tap_code16(LCTL(KC_LBRC));  // Send Ctrl-[ on tap
-		return false;  // Return false to ignore further processing of key
-            }
-            break;
     }
     return true;
 }
