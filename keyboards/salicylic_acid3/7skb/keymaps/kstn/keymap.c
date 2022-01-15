@@ -23,15 +23,6 @@ enum custom_keycodes {
   RGB_RST = SAFE_RANGE
 };
 
-// Tap-dance structs.
-enum tapdances{
-  TD_GRV_ESC = 0,
-};
-
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [TD_GRV_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_GRV, KC_ESC),
-};
-
 // Keycode for thumb keys.
 #define THUMB_0 LT(_F1, KC_ESC)   // Layer-1 when held. Esc when tapped.
 #define THUMB_1 LSFT_T(KC_SPC)    // Shift when held. Space when tapped.
@@ -47,7 +38,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
   //,-----------------------------------------------------|   |--------------------------------------------------------------------------------.
-TD(TD_GRV_ESC),   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,        KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,  KC_EQL, KC_BSLS,  KC_DEL,
+       KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,        KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,  KC_EQL, KC_BSLS,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------+--------|
        KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_LBRC, KC_RBRC, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------|
