@@ -14,9 +14,9 @@ extern uint8_t is_master;
 // entirely and just use numbers.
 enum layer_number {
   _QWERTY = 0,
-  _F0,
-  _F1,
-  _F2,
+  _L,  // Layer when left shift is held down.
+  _R,  // Layer when right shfit is held down.
+  _F,  // Layer for function keys.
 };
 
 enum custom_keycodes {
@@ -24,10 +24,10 @@ enum custom_keycodes {
 };
 
 // Keycode for thumb keys.
-#define THUMB_0 LT(_F1, KC_ESC)   // Layer-1 when held. Esc when tapped.
-#define THUMB_1 LSFT_T(KC_SPC)    // Shift when held. Space when tapped.
-#define THUMB_2 RSFT_T(KC_SPC)    // Shift when held. Space when tapped.
-#define THUMB_3 LT(_F2, KC_ENT)   // Layer-2 when held. Enter when tapped.
+#define THUMB_0 LT(_L, KC_ESC)  // Layer-1 when held. Esc when tapped.
+#define THUMB_1 LSFT_T(KC_SPC)  // Shift when held. Space when tapped.
+#define THUMB_2 RSFT_T(KC_SPC)  // Shift when held. Space when tapped.
+#define THUMB_3 LT(_R, KC_ENT)  // Layer-2 when held. Enter when tapped.
 
 // Keycode for home-row modifier keys.
 #define CTL_S CTL_T(KC_S)  // Control when held. S when tapped.
@@ -53,25 +53,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT, KC_PSCR,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
-               KC_LGUI, KC_LALT, THUMB_0, THUMB_1,              THUMB_2, THUMB_3,          MO(_F0), KC_RCTL
+               KC_LGUI, KC_LALT, THUMB_0, THUMB_1,              THUMB_2, THUMB_3,           MO(_F), KC_RCTL
           //`---------------------------------------------|   |--------------------------------------------'
   ),
 
-  [_F0] = LAYOUT(
-  //,-----------------------------------------------------|   |--------------------------------------------------------------------------------.
-       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------+--------|
-       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX,
-  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
-               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX
-          //`---------------------------------------------|   |--------------------------------------------'
-  ),
-
-  [_F1] = LAYOUT(  // Left space held down.
+  [_L] = LAYOUT(  // Left space held down.
   //,-----------------------------------------------------|   |--------------------------------------------------------------------------------.
       _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______, _______, _______, _______,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------+--------|
@@ -85,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           //`---------------------------------------------|   |--------------------------------------------'
   ),
 
-  [_F2] = LAYOUT(  // Right space held down.
+  [_R] = LAYOUT(  // Right space held down.
   //,-----------------------------------------------------|   |--------------------------------------------------------------------------------.
       _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______, _______, _______, _______,
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------+--------|
@@ -97,6 +83,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
                _______, _______, _______,  KC_DEL,              _______, _______,          _______, _______ 
           //`---------------------------------------------|   |--------------------------------------------'
+  ),
+
+  [_F] = LAYOUT(
+  //,-----------------------------------------------------|   |--------------------------------------------------------------------------------.
+       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------+--------|
+       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------+--------|
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     XXXXXXX, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|   |--------+--------+--------+--------+--------+--------+--------|
+               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,              XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX
+          //`---------------------------------------------|   |--------------------------------------------'
   )
 };
 
@@ -105,13 +105,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 layer_state_t layer_state_set_user(layer_state_t state) {
 #ifdef RGBLIGHT_ENABLE
     switch (get_highest_layer(state)) {
-    case _F0:
+    case _F:
       rgblight_sethsv_at(HSV_RED, 0);
       break;
-    case _F1:
+    case _L:
       rgblight_sethsv_at(HSV_GREEN, 0);
       break;
-    case _F2:
+    case _R:
       rgblight_sethsv_at(HSV_BLUE, 0);
       break;
     default: //  for any other layers, or the default layer
