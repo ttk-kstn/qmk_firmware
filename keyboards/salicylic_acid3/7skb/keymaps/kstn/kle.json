@@ -70,44 +70,73 @@
     },
     "CTL",
     {
+      "c": "#eeeecc",
+      "a": 6
+    },
+    "⤒\n\n~\n\n\n\n\n\nA",
+    {
+      "a": 4
+    },
+    "\n\n\n\n\n\n⤓\n\\\n\nS\nCTL",
+    {
+      "a": 6
+    },
+    "⍐\n\n|\n\n\n\n\n\nD",
+    {
+      "a": 4,
+      "n": true
+    },
+    "\n\n\n\n\n\n⍗\n_\n\nF\nALT",
+    {
       "c": "#cccccc",
-      "a": 4
-    },
-    "\n\n\n\n\n\n⤒\n⤒\n\nA\nCTL",
-    {
       "a": 6
     },
-    "⤓\n\n⤓\n\n\n\n\n\nS",
-    "⍐\n\n⍐\n\n\n\n\n\nD",
+    "<i class='mss mss-Return-5'></i>\n\n-\n\n\n\n\n\nG",
     {
+      "x": 1
+    },
+    "+\n\n←\n\n\n\n\n\nH",
+    {
+      "c": "#eeeecc",
       "a": 4,
       "n": true
     },
-    "\n\n\n\n\n\n⍗\n⍗\n\nF\nALT",
-    {
-      "a": 7
-    },
-    "G",
-    {
-      "x": 1,
-      "a": 6
-    },
-    "←\n\n←\n\n\n\n\n\nH",
-    {
-      "a": 4,
-      "n": true
-    },
-    "\n\n\n\n\n\n↓\n↓\n\nJ\nALT",
+    "\n\n\n\n\n\n=\n↓\n\nJ\nALT",
     {
       "a": 6
     },
-    "↑\n\n↑\n\n\n\n\n\nK",
-    "→\n\n→\n\n\n\n\n\nL",
+    "{\n\n↑\n\n\n\n\n\nK",
     {
       "a": 4
     },
-    ":\n\n\n\n\n\nBS\nBS\n\n;\nCTL",
-    "\"\n\n\n\n\n\n\n\n\n'",
+    "\n\n\n\n\n\n}\n→\n\nL\nCTL",
+    {
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    ":\n\n\n\n\n\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n;",
+    {
+      "c": "#cccccc",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "\"\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n'",
     {
       "c": "#777777",
       "a": 7,
@@ -136,10 +165,17 @@
     "^\n\n^\n\n\n\n\n\nN",
     "&\n\n&\n\n\n\n\n\nM",
     {
-      "a": 4
+      "a": 4,
+      "f": 3
     },
     "<\n\n\n\nVolUp\n\n*\n*\n\n,",
+    {
+      "f": 3
+    },
     ">\n\n\n\nMute\n\n(\n(\n\n.",
+    {
+      "f": 3
+    },
     "?\n\n\n\nVolDwn\n\n)\n)\n\n/",
     {
       "c": "#aaaaaa",
@@ -161,19 +197,25 @@
     "ALT",
     {
       "a": 5,
+      "f": 3,
       "w": 1.5
     },
     "\nLAYER(L)\n\n\n\n\nESC",
     {
+      "a": 4,
+      "f": 3,
       "w": 1.25
     },
-    "\nSHIFT\n\n\n\n\nSPACE",
+    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\nSPC\nSHIFT",
     {
       "x": 1,
+      "f": 3,
       "w": 1.25
     },
-    "\nSHIFT\n\n\n\n\nSPACE",
+    "\n\n\n\n\n\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n\nSPC\nSHIFT",
     {
+      "a": 5,
+      "f": 3,
       "w": 2
     },
     "\nLAYER(R)\n\n\n\n\nENTER",
@@ -182,6 +224,6 @@
       "w": 1.5
     },
     "LAYER(F)",
-    "CTL"
+    "<i class='kb kb-Unicode-Control-1'></i><i class='kb kb-Unicode-Alternate-1'></i><i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n\n\nURL"
   ]
 ]
