@@ -34,3 +34,8 @@
  - 全然使わない親指列の右端キーで遊ぶ。
    - 1発で<kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>Del</kbd>
    - Fレイヤーキーと一緒に押すと、keyboard-layout-editor.com のPermalinkを`SEND_STRING()`
+
+その後の調整
+ - ホームポジションにコーディングでよく使う記号があるのはとても便利。
+   - なので、コーディングでよく使う<kbd>(</kbd>と<kbd>)</kbd>を<kbd>{</kbd>と<kbd>}</kbd>と入れ替え。
+   - 遠いキー入力することはなくなったので、そっちは削除。

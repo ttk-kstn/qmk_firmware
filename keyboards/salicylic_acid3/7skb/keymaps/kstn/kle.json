@@ -58,14 +58,13 @@
     "}\n\n\n\nF12\n\n=\n=\n\n]",
     {
       "c": "#aaaaaa",
-      "a": 6,
+      "a": 7,
       "w": 1.5
     },
-    "\\\n\n\\\n\n\n\n\n\nBS"
+    "BS"
   ],
   [
     {
-      "a": 7,
       "w": 1.75
     },
     "CTL",
@@ -105,11 +104,11 @@
     {
       "a": 6
     },
-    "{\n\n↑\n\n\n\n\n\nK",
+    "(\n\n↑\n\n\n\n\n\nK",
     {
       "a": 4
     },
-    "\n\n\n\n\n\n}\n→\n\nL\nCTL",
+    "\n\n\n\n\n\n)\n→\n\nL\nCTL",
     {
       "fa": [
         0,
@@ -172,23 +171,22 @@
     {
       "f": 3
     },
-    ">\n\n\n\nMute\n\n(\n(\n\n.",
+    ">\n\n\n\nMute\n\n{\n{\n\n.",
     {
       "f": 3
     },
-    "?\n\n\n\nVolDwn\n\n)\n)\n\n/",
+    "?\n\n\n\nVolDwn\n\n}\n}\n\n/",
     {
       "c": "#aaaaaa",
-      "a": 6,
+      "a": 7,
       "w": 1.75
     },
-    "_\n\n_\n\n\n\n\n\nSHIFT",
-    "+\n\n+\n\n\n\n\n\nPrSc"
+    "SHIFT",
+    "PrSc"
   ],
   [
     {
-      "x": 1.5,
-      "a": 7
+      "x": 1.5
     },
     "GUI",
     {
