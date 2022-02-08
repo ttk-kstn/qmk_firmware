@@ -34,7 +34,7 @@
       "a": 6,
       "w": 1.5
     },
-    "`\n\n`\n\nESC\n\n\n\nTAB",
+    "`\n\n`\n\nESC",
     {
       "c": "#cccccc"
     },
@@ -204,7 +204,7 @@
       "f": 3,
       "w": 1.25
     },
-    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\nSPC\nSHIFT",
+    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\nTAB\nSHIFT",
     {
       "x": 1,
       "f": 3,
