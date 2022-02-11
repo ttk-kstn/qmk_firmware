@@ -1,0 +1,277 @@
+[
+  [
+    {
+      "x": 3,
+      "a": 6
+    },
+    "3\n\n3\n\nF3\n\n\n\nE",
+    {
+      "x": 3,
+      "c": "#aaaaaa",
+      "a": 7
+    },
+    "GUI",
+    {
+      "x": 3,
+      "c": "#cccccc",
+      "a": 6
+    },
+    "8\n\n8\n\nF8\n\n\n\nI"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2
+    },
+    "2\n\n2\n\nF2\n\n\n\nW",
+    {
+      "x": 1
+    },
+    "4\n\n4\n\nF4\n\n\n\nR",
+    {
+      "x": 5
+    },
+    "7\n\n7\n\nF7\n\n\n\nU",
+    {
+      "x": 1
+    },
+    "9\n\n9\n\nF9\n\n\n\nO"
+  ],
+  [
+    {
+      "y": -0.75,
+      "a": 4
+    },
+    "\n\n\n\n\n\n`\n`\nPrt\nScr",
+    {
+      "a": 6
+    },
+    "1\n\n1\n\nF1\n\n\n\nQ",
+    {
+      "x": 3
+    },
+    "5\n\n5\n\nF5\n\n\n\nT",
+    {
+      "x": 3
+    },
+    "6\n\n6\n\nF6\n\n\n\nY",
+    {
+      "x": 3
+    },
+    "0\n\n0\n\nF10\n\n\n\nP",
+    {
+      "a": 4
+    },
+    "{\n\n\n\nF11\n\n\n\n\n["
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 3,
+      "c": "#eeeecc",
+      "a": 6
+    },
+    "⍐\n\n|\n\n\n\n\n\nD",
+    {
+      "x": 2.5,
+      "c": "#aaaaaa",
+      "a": 7
+    },
+    "PrSc",
+    "<i class='kb kb-Unicode-Control-1'></i><i class='kb kb-Unicode-Alternate-1'></i><i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n\n\nURL",
+    {
+      "x": 2.5,
+      "c": "#eeeecc",
+      "a": 6
+    },
+    "(\n\n↑\n\n\n\n\n\nK"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2,
+      "a": 4
+    },
+    "\n\n\n\n\n\n⤓\n\\\n\nS\nCTL",
+    {
+      "x": 1,
+      "n": true
+    },
+    "\n\n\n\n\n\n⍗\n_\n\nF\nALT",
+    {
+      "x": 5,
+      "n": true
+    },
+    "\n\n\n\n\n\n=\n↓\n\nJ\nALT",
+    {
+      "x": 1
+    },
+    "\n\n\n\n\n\n)\n→\n\nL\nCTL"
+  ],
+  [
+    {
+      "y": -0.75,
+      "c": "#aaaaaa",
+      "a": 7
+    },
+    "CTL",
+    {
+      "c": "#eeeecc",
+      "a": 6
+    },
+    "⤒\n\n~\n\n\n\n\n\nA",
+    {
+      "x": 3,
+      "c": "#cccccc"
+    },
+    "<i class='mss mss-Return-5'></i>\n\n-\n\n\n\n\n\nG",
+    {
+      "x": 3
+    },
+    "+\n\n←\n\n\n\n\n\nH",
+    {
+      "x": 3,
+      "c": "#eeeecc",
+      "a": 4,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    ":\n\n\n\n\n\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n;",
+    {
+      "c": "#cccccc",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "\"\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n'"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 3,
+      "a": 6
+    },
+    "#\n\n#\n\n\n\n\n\nC",
+    {
+      "x": 7,
+      "a": 4,
+      "f": 3
+    },
+    "<\n\n\n\nVolUp\n\n*\n*\n\n,"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 2,
+      "a": 6
+    },
+    "@\n\n@\n\n\n\n\n\nX",
+    {
+      "x": 1
+    },
+    "$\n\n$\n\n\n\n\n\nV",
+    {
+      "x": 5
+    },
+    "&\n\n&\n\n\n\n\n\nM",
+    {
+      "x": 1,
+      "a": 4,
+      "f": 3
+    },
+    ">\n\n\n\nMute\n\n{\n{\n\n."
+  ],
+  [
+    {
+      "y": -0.75,
+      "c": "#aaaaaa",
+      "a": 7
+    },
+    "SHIFT",
+    {
+      "c": "#cccccc",
+      "a": 6
+    },
+    "!\n\n!\n\n\n\n\n\nZ",
+    {
+      "x": 3
+    },
+    "%\n\n%\n\n\n\n\n\nB",
+    {
+      "x": 3
+    },
+    "^\n\n^\n\n\n\n\n\nN",
+    {
+      "x": 3,
+      "a": 4,
+      "f": 3
+    },
+    "?\n\n\n\nVolDwn\n\n}\n}\n\n/",
+    "}\n\n\n\nF12\n\n\n\n\n]"
+  ],
+  [
+    {
+      "y": -0.25,
+      "x": 3.75,
+      "c": "#aaaaaa",
+      "a": 7
+    },
+    "ALT",
+    {
+      "x": 5.5
+    },
+    "LYR(F)"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 4.75,
+      "a": 5,
+      "f": 3
+    },
+    "\nLYR(L)\n\n\n\n\nESC",
+    {
+      "x": 3.5,
+      "f": 3
+    },
+    "\nLYR(R)\n\n\n\n\n<i class='mss mss-Return-5'></i>"
+  ],
+  [
+    {
+      "r": 15,
+      "rx": 6,
+      "ry": 3.5,
+      "y": -0.5,
+      "a": 4,
+      "f": 3,
+      "h": 1.5
+    },
+    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\nTAB\n\nSHIFT"
+  ],
+  [
+    {
+      "r": -15,
+      "rx": 9,
+      "y": -0.5,
+      "x": -1,
+      "f": 3,
+      "h": 1.5
+    },
+    "\n\n\n\n\n\n<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\nSPC\n\nSHIFT"
+  ]
+]
