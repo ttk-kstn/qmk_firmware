@@ -1,27 +1,31 @@
 [
   [
     {
-      "c": "#777777"
+      "c": "#777777",
+      "a": 7
     },
-    "~\n\n\n\nESC\n\n\n\n\n`",
+    "",
     {
       "c": "#cccccc"
     },
-    "!\n\n\n\nF1\n\n\n\n\n1",
-    "@\n\n\n\nF2\n\n\n\n\n2",
-    "#\n\n\n\nF3\n\n\n\n\n3",
-    "$\n\n\n\nF4\n\n\n\n\n4",
-    "%\n\n\n\nF5\n\n\n\n\n5",
+    "",
+    "",
+    "",
+    "",
+    "",
     {
       "x": 1
     },
-    "^\n\n\n\nF6\n\n\n\n\n6",
-    "&\n\n\n\nF7\n\n\n\n\n7",
-    "*\n\n\n\nF8\n\n\n\n\n8",
-    "(\n\n\n\nF9\n\n\n\n\n9",
-    ")\n\n\n\nF10\n\n\n\n\n0",
-    "_\n\n\n\nF11\n\n\n\n\n-",
-    "+\n\n\n\nF12\n\n\n\n\n=",
+    "",
+    "",
+    "",
+    "",
+    "",
+    {
+      "a": 4
+    },
+    "_\n\n\n\n\n\n\n\n\n-",
+    "+\n\n\n\n\n\n\n\n\n=",
     "|\n\n\n\n\n\n\n\n\n\\",
     {
       "c": "#aaaaaa",
@@ -34,7 +38,7 @@
       "a": 6,
       "w": 1.5
     },
-    "`\n\n`\n\nESC",
+    "`\n\n`",
     {
       "c": "#cccccc"
     },
@@ -54,8 +58,8 @@
     {
       "a": 4
     },
-    "{\n\n\n\nF11\n\n-\n-\n\n[",
-    "}\n\n\n\nF12\n\n=\n=\n\n]",
+    "{\n\n\n\nF11\n\n\n\n\n[",
+    "}\n\n\n\nF12\n\n\n\n\n]",
     {
       "c": "#aaaaaa",
       "a": 7,
