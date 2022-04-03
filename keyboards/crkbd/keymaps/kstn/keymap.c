@@ -30,7 +30,7 @@ enum layer_number {
 
 // Keycode for thumb keys.
 #define THUMB_0 LT(_L, KC_ESC)  // Layer-1 when held. Esc when tapped.
-#define THUMB_1 LSFT_T(KC_TAB)  // Shift when held. Tab when tapped.
+#define THUMB_1 LSFT_T(KC_SPC)  // Shift when held. Space when tapped.
 #define THUMB_2 RSFT_T(KC_SPC)  // Shift when held. Space when tapped.
 #define THUMB_3 LT(_R, KC_ENT)  // Layer-2 when held. Enter when tapped.
 
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RBRC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, THUMB_0, THUMB_1,    THUMB_2, THUMB_3, XXXXXXX
+                                           KC_TAB, THUMB_0, THUMB_1,    THUMB_2, THUMB_3, KC_RALT
                                       //`--------------------------'  `--------------------------'
 
   ),
