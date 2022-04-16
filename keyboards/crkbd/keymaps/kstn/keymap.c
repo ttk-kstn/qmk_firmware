@@ -42,6 +42,14 @@ enum layer_number {
 
 // Ctrl-Alt-Delete for windows.
 #define CTRL_ALT_DEL LALT(LCTL(KC_DEL))
+// Alt-GRV to switch IME in windows.
+#define ALT_GRV LALT(KC_GRV)
+
+enum custom_keycodes {
+  ARROW = SAFE_RANGE,
+  FZF_TRG,
+};
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_split_3x6_3(
@@ -85,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
 LALT(KC_PSCR),   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   ARROW,                      XXXXXXX, FZF_TRG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU,  KC_F12,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -105,6 +113,25 @@ LALT(KC_PSCR),   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     
                                       //`--------------------------'  `--------------------------'
   )
 };
+
+
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case ARROW:  // Type "->"
+    if (record->event.pressed) {
+      SEND_STRING("->");
+    }
+    return false;
+    case FZF_TRG:  // Type "**<TAB>"
+    if (record->event.pressed) {
+      SEND_STRING("**"SS_TAP(X_TAB));
+    }
+    return false;
+  }
+  return true;
+}
+
 
 #ifdef OLED_ENABLE
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
