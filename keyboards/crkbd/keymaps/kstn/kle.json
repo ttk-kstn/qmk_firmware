@@ -6,15 +6,7 @@
     },
     "3\n\n3\n\nF3\n\n\n\nE",
     {
-      "x": 3,
-      "c": "#aaaaaa",
-      "a": 7
-    },
-    "GUI",
-    {
-      "x": 3,
-      "c": "#cccccc",
-      "a": 6
+      "x": 7
     },
     "8\n\n8\n\nF8\n\n\n\nI"
   ],
@@ -39,13 +31,9 @@
   ],
   [
     {
-      "y": -0.75,
-      "a": 4
+      "y": -0.75
     },
-    "\n\n\n\n\n\n`\n`\nPrt\nScr",
-    {
-      "a": 6
-    },
+    "`\n\n`\n\nPrtScr\n\n\n\nGUI",
     "1\n\n1\n\nF1\n\n\n\nQ",
     {
       "x": 3
@@ -62,27 +50,18 @@
     {
       "a": 4
     },
-    "{\n\n\n\nF11\n\n\n\n\n["
+    "{\n\n\n\nF11\n\n.\n.\n\n["
   ],
   [
     {
       "y": -0.5,
       "x": 3,
-      "c": "#eeeecc",
+      "c": "#eecccc",
       "a": 6
     },
     "⍐\n\n|\n\n\n\n\n\nD",
     {
-      "x": 2.5,
-      "c": "#aaaaaa",
-      "a": 7
-    },
-    "PrSc",
-    "<i class='kb kb-Unicode-Control-1'></i><i class='kb kb-Unicode-Alternate-1'></i><i class='kb kb-Unicode-DeleteRight-Big'></i>\n\n\n\nURL",
-    {
-      "x": 2.5,
-      "c": "#eeeecc",
-      "a": 6
+      "x": 7
     },
     "(\n\n↑\n\n\n\n\n\nK"
   ],
@@ -102,7 +81,7 @@
       "x": 5,
       "n": true
     },
-    "\n\n\n\n\n\n=\n↓\n\nJ\nALT",
+    "\n\n\n\n**TAB\n\n=\n↓\n\nJ\nALT",
     {
       "x": 1
     },
@@ -111,12 +90,12 @@
   [
     {
       "y": -0.75,
-      "c": "#aaaaaa",
+      "c": "#cccccc",
       "a": 7
     },
     "CTL",
     {
-      "c": "#eeeecc",
+      "c": "#eecccc",
       "a": 6
     },
     "⤒\n\n~\n\n\n\n\n\nA",
@@ -124,14 +103,14 @@
       "x": 3,
       "c": "#cccccc"
     },
-    "<i class='mss mss-Return-5'></i>\n\n-\n\n\n\n\n\nG",
+    "<i class='mss mss-Return-5'></i>\n\n-\n\n->\n\n\n\nG",
     {
       "x": 3
     },
     "+\n\n←\n\n\n\n\n\nH",
     {
       "x": 3,
-      "c": "#eeeecc",
+      "c": "#eecccc",
       "a": 4,
       "fa": [
         0,
@@ -194,17 +173,15 @@
       "a": 4,
       "f": 3
     },
-    ">\n\n\n\nMute\n\n{\n{\n\n."
+    ">\n\n\n\nMute\n\n-\n-\n\n."
   ],
   [
     {
       "y": -0.75,
-      "c": "#aaaaaa",
       "a": 7
     },
     "SHIFT",
     {
-      "c": "#cccccc",
       "a": 6
     },
     "!\n\n!\n\n\n\n\n\nZ",
@@ -221,21 +198,23 @@
       "a": 4,
       "f": 3
     },
-    "?\n\n\n\nVolDwn\n\n}\n}\n\n/",
-    "}\n\n\n\nF12\n\n\n\n\n]"
+    "?\n\n\n\nVolDwn\n\n+\n+\n\n/",
+    {
+      "f": 3
+    },
+    "}\n\n\n\nF12\n\n,\n,\n\n]"
   ],
   [
     {
       "y": -0.25,
       "x": 3.75,
-      "c": "#aaaaaa",
       "a": 7
     },
-    "ALT",
+    "TAB",
     {
       "x": 5.5
     },
-    "LYR(F)"
+    "Alt+~"
   ],
   [
     {
@@ -261,7 +240,7 @@
       "f": 3,
       "h": 1.5
     },
-    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\nTAB\n\nSHIFT"
+    "\n\n\n\n\n\n\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\nSPC\n\nSHIFT"
   ],
   [
     {
