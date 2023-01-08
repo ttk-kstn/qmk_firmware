@@ -28,3 +28,8 @@
 
 // When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
 #define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
+
+/* Select hand configuration */
+// #define MASTER_LEFT
+// #define MASTER_RIGHT
+#define EE_HANDS
