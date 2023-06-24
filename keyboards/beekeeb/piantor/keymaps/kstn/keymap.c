@@ -158,5 +158,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // Upon keyboard initilization, turn-on onboard LED connected to GPIO25.
 void keyboard_post_init_user(void) {
   setPinOutput(GP25);
-  writePinHigh(GP25);
+  int i = 0;
+  while (true) {
+    writePinHigh(GP25);
+    wait_ms(80);
+    writePinLow(GP25);
+    if (i == 2) { break; }
+    wait_ms(120);
+    ++i;
+  }
 }
